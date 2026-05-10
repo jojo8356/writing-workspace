@@ -1,0 +1,12 @@
+.git/
+.gitignore
+_output/templates_remplis/
+node_modules/
+*.log
+.DS_Store
+.idea/
+.vscode/
+test/
+tests/
+*.test.js
+.editorconfig

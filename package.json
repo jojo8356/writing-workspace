@@ -1,0 +1,63 @@
+{
+  "name": "writing-workspace",
+  "version": "0.1.0",
+  "description": "Architecture complète pour projets d'écriture de fiction — inspirée de BMAD-METHOD et adaptée à la création de romans/nouvelles avec Claude Code",
+  "keywords": [
+    "writing",
+    "novel",
+    "fiction",
+    "claude",
+    "claude-code",
+    "writing-workspace",
+    "bmad",
+    "framework",
+    "skills",
+    "ecriture",
+    "roman"
+  ],
+  "homepage": "https://github.com/jojo8356/writing-workspace",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jojo8356/writing-workspace.git"
+  },
+  "author": "Johan Polsinelli (jojo8356)",
+  "license": "MIT",
+  "type": "commonjs",
+  "bin": {
+    "writing-workspace": "./bin/cli.js",
+    "ww": "./bin/cli.js"
+  },
+  "main": "./tools/installer.js",
+  "files": [
+    "bin/",
+    "tools/",
+    "0_fondamentaux/",
+    "1_personnages/",
+    "2_univers/",
+    "3_trame/",
+    "4_plan/",
+    "5_ecriture/",
+    "6_revision/",
+    "7_outils/",
+    ".claude/",
+    "README.md",
+    "HELP.md",
+    "SESSION_RULES.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node bin/cli.js",
+    "test": "node tools/test.js",
+    "prepublishOnly": "node tools/validate.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.7.0",
+    "kleur": "^4.1.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
