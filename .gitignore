@@ -1,0 +1,10 @@
+# Sortie de travail (contenu intime des projets) — push dans repo privé séparé
+_output/
+
+# Node
+node_modules/
+*.log
+
+# Système
+.DS_Store
+Thumbs.db
